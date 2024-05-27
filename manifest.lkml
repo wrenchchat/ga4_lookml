@@ -2,12 +2,12 @@ project_name: "ga_four"
 
 ## Connection Constants:
 constant: GA4_CONNECTION {
-  value: ""
+  value: "bigquery"
   export: override_required
 }
 
 constant: GA4_SCHEMA {
-  value: "ga4_export"
+  value: "analytics_251639436"
   export: override_optional
 }
 
