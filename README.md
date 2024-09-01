@@ -148,7 +148,7 @@ The final select statement in this derived table combines the elements of each p
 - Geo Data - Nested Element with Geo columns from output of “DeviceGeo”.
 - Event Data - Array of all event components that make up this session.
 
-## Incremental Derived Table
+## Incremental Derived Table (BETA)
 The output of this SQL query is stored as an incremental persistent derived table. This allows appending of new rows to an existing table, instead of a complete drop/create with every scheduled run. The key upon which the incremental updates happen is “Session Date”. To accommodate potential delays in full data delivery, the increment_offset is set to 3. This means for each run, up to 3 days of data may be inserted.
 
 The initial build of this table will generate a SQL query inserting “1=1”, running across all event tables present in the target dataset. Subsequent runs will insert appropriate “WHERE” syntax to limit the results to the date range specified by the “increment_offset” value.
