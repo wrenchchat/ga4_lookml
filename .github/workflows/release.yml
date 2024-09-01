@@ -1,5 +1,7 @@
 name: release
 
+
+# Only works on Master branch
 on:
   workflow_dispatch:
   push:
