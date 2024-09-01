@@ -22,7 +22,7 @@
   },
   "models": [
     {
-      "name": "ga4",
+      "name": "ga_four",
       "connection_constant": "GA4_CONNECTION"
     }
   ]
