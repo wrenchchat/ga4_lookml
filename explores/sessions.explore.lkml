@@ -116,12 +116,12 @@ explore: sessions {
     relationship: one_to_one
     view_label: "ARIMA"
   }
-  join: arima_join {
-    type: inner
-    sql_on: ${forecasting.forecast_timestamp}=${arima_join.date_join} OR
-    ${sessions.session_date}=${arima_join.date_join};;
-    relationship: many_to_one
-    view_label: "ARIMA"
-  }
+  # join: arima_join {
+  #   type: inner
+  #   sql_on: ${forecasting.forecast_timestamp}=${arima_join.date_join} OR
+  #   ${sessions.session_date}=${arima_join.date_join};;
+  #   relationship: many_to_one
+  #   view_label: "ARIMA"
+  # }
 
 }

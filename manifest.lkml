@@ -2,12 +2,12 @@ project_name: "ga_four"
 
 ## Connection Constants:
 constant: GA4_CONNECTION {
-  value: "bigquery"  // change to connection string in BigQuery
+  value: "empyrean-backup-411421"
   export: override_required
 }
 
 constant: GA4_SCHEMA {
-  value: "analytics_customer"  // change to dataset string in BigQuery
+  value: "analytics_321061426"
   export: override_required
 }
 
